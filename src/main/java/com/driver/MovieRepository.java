@@ -59,15 +59,15 @@ public class MovieRepository
     }
     public List<String>findAllMovies()
     {
-        List<String>movie = new ArrayList<>();
+        /*List<String>movie = new ArrayList<>();
         for(List<String> list:hashmapmoviedirector.values())
         {
             for(String val:list)
             {
                 movie.add(val);
             }
-        }
-        return movie;
+        }*/
+        return (List<String>) hashmapmovie.keySet();
     }
     /*  public void deleteDirectorByName(String director)
     {
