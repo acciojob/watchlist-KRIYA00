@@ -64,7 +64,12 @@ public  ResponseEntity<String> addDirector(Director director)
         movieService.deleteDirectorByName(director);
         return new ResponseEntity<>("success", HttpStatus.OK);
     }
-
+@DeleteMapping(" DELETE /movies/delete-all-directors")
+    public  ResponseEntity<String>deleteAllDirectors()
+{
+    movieService.deleteAllDirectors();
+    return new ResponseEntity<>("success", HttpStatus.OK);
+}
 
 
 }

@@ -41,11 +41,11 @@ movieRepository.addMovieDirectorPair(moviename,directorname);
     {
         return movieRepository.findAllMovies();
     }
-    public String deleteDirectorByName(String director) {
-        return movieRepository.deleteDirectorByName(director);
+    public void deleteDirectorByName(String director) {
+         movieRepository.deleteDirectorByName(director);
     }
-    public String deleteAllDirectors()
+    public void deleteAllDirectors()
     {
-        return "";
+        movieRepository.deleteAllDirectors();
     }
 }
