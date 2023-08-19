@@ -73,15 +73,15 @@ public class MovieRepository
         }
         return movielist;
     }
-    /*  public void deleteDirectorByName(String director)
+      public void deleteDirectorByName(String director)
     {
         if(hashmapmoviedirector.containsKey(director))
         hashmapmoviedirector.remove(director);
         return ;
     }
-    */
 
-    public void deleteDirectorByName(String director) {
+
+   /* public void deleteDirectorByName(String director) {
         List<String> movieList;
         if(hashmapmoviedirector.containsKey(director))
         {
@@ -96,7 +96,7 @@ public class MovieRepository
         hashmapdirector.remove(director);
     }
 
-
+*/
 
     public void deleteAllDirectors() {
 
