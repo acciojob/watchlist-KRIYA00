@@ -69,27 +69,29 @@ public class MovieRepository
         }
         return movie;
     }
-      public void deleteDirectorByName(String director)
+    /*  public void deleteDirectorByName(String director)
     {
         if(hashmapmoviedirector.containsKey(director))
         hashmapmoviedirector.remove(director);
         return ;
     }
-    /*public void deleteDirectorByName(String directorName) {
+    */
+
+    public void deleteDirectorByName(String director) {
         List<String> movieList;
-        if(movieDirectPairDb.containsKey(directorName))
+        if(hashmapmoviedirector.containsKey(director))
         {
-            movieList=movieDirectPairDb.get(directorName);
+            movieList=hashmapmoviedirector.get(director);
 
             for(String movie:movieList)
             {
-                movieDB.remove(movie);
+                hashmapmovie.remove(movie);
             }
-            movieDirectPairDb.remove(directorName);
+            hashmapmoviedirector.remove(director);
         }
-        directorDb.remove(directorName);
+        hashmapdirector.remove(director);
     }
-    */
+
 
 
     public void deleteAllDirectors() {
