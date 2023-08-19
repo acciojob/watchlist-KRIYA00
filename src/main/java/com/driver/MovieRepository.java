@@ -59,15 +59,19 @@ public class MovieRepository
     }
     public List<String>findAllMovies()
     {
-        /*List<String>movie = new ArrayList<>();
-        for(List<String> list:hashmapmoviedirector.values())
+        List<String>movielist = new ArrayList<>();
+        /*for(List<String> list:hashmapmoviedirector.values())
         {
             for(String val:list)
             {
                 movie.add(val);
             }
         }*/
-        return (List<String>) hashmapmovie.keySet();
+        for(String val:hashmapmovie.keySet())
+        {
+            movielist.add(val);
+        }
+        return movielist;
     }
     /*  public void deleteDirectorByName(String director)
     {
